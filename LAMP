@@ -1,0 +1,23 @@
+#basic Apache web server package
+
+sudo apt-get install apache2 apache2-doc
+
+#MariaDB is a community-built fork of MySQL
+
+sudo apt install mariadb-server
+
+sudo mysql_secure_installation
+
+sudo mariadb
+
+MariaDB [(none)]> GRANT ALL ON *.* TO 'admin'@'localhost' IDENTIFIED BY 'password' WITH GRANT OPTION;
+
+MariaDB [(none)]> FLUSH PRIVILEGES;
+
+MariaDB [(none)]> exit
+
+mariadb -u admin -p
+
+#php 
+
+https://github.com/taikkyithar/debian-server/blob/master/php
